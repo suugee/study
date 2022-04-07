@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <style>
+        .swiper {
+            float: left;
+            width: 780px;
+            height: 420px;
+            margin: auto;
+        }
+        
+        .swiper-slide {
+            float: left;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div class="header w">
+        <div class="logo">
+            <img src="image/logo.png" alt="">
+            <!-- 导航界面 -->
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">课程</a></li>
+                <li><a href="javascript:;">职业规划</a></li>
+            </ul>
+        </div>
+        <!-- 搜索框制作 -->
+        <div class="search">
+            <input type="text" value="请输入关键词">
+            <button></button>
+        </div>
+        <div class="user">
+            <img src="image/user.png" alt="">qq-lilei
+        </div>
+    </div>
+    <!-- 头部区域结束 -->
+
+    <div class="baner">
+        <div class="w">
+            <div class="subnav">
+                <ul>
+                    <li><a href="#">前端开发 <span> &gt;</span></a></li>
+                    <li><a href="#">后端开发 <span> &gt;</span></a></li>
+                    <li><a href="#">移动开发 <span> &gt;</span></a></li>
+                    <li><a href="#">人工智能 <span> &gt;</span></a></li>
+                    <li><a href="#">商业预测 <span> &gt;</span></a></li>
+                    <li><a href="#">云计算&大数据 <span> &gt;</span></a></li>
+                    <li><a href="#">运维&测试 <span> &gt;</span></a></li>
+                    <li><a href="#">UI设计 <span> &gt;</span></a></li>
+                    <li><a href="#">产品 <span> &gt;</span></a></li>
+
+                </ul>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="image/banner2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="image/banner2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="image/banner2.png" alt=""></div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="course">
+
+                <h2>我的课程表</h2>
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <h4>继续学习 程序语言设计</h4>
+                            <p>正在学习-使用对象</p>
+                        </li>
+                        <li>
+                            <h4>继续学习 程序语言设计</h4>
+                            <p>正在学习-使用对象</p>
+                        </li>
+                        <li>
+                            <h4>继续学习 程序语言设计</h4>
+                            <p>正在学习-使用对象</p>
+                        </li>
+                    </ul>
+                    <div class="more">
+                        <h4>全部课程</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

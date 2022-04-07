@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        body {
+            background-color: rgba(245, 245, 245);
+        }
+        
+        .box {
+            width: 1226px;
+            height: 615px;
+            /* background-color: skyblue; */
+            margin: 100px auto;
+        }
+        
+        .box1 {
+            float: left;
+            width: 235px;
+            height: 615px;
+            background-color: #fff;
+        }
+        
+        .box1 img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .box2 {
+            float: right;
+            width: 991px;
+            height: 615px;
+            /* background-color: pink; */
+        }
+        
+        .box2 li {
+            float: left;
+            width: 230px;
+            height: 290px;
+            /* background-color: skyblue; */
+            /* margin-right: 5px; */
+            margin-left: 11px;
+            margin-bottom: 17px;
+        }
+        
+        .box2 li img {
+            margin-left: 15px;
+        }
+        
+        .box2 li h5 {
+            margin-left: 75px;
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        
+        .box2 li p {
+            margin-left: 50px;
+            margin-top: 5px;
+            font-size: 12px;
+            color: rgb(176, 176, 176);
+        }
+        
+        .box2 ul .price span {
+            color: rgb(255, 103, 0);
+            margin-left: 69px;
+        }
+        
+        .box2 li:hover {
+            box-shadow: 3px 3px 14px 7px rgba(0, 0, 0, .1);
+        }
+        
+        .box1 img:hover {
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, .1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ac5cafc68c10ce4471869d378f594b52.png?thumb=1&w=234&h=614&f=webp&q=90" alt="">
+        </div>
+        <div class="box2">
+            <ul>
+                <li class="one">
+                    <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d764150a470174741d8b0b04515f7a78.jpg?thumb=1&w=200&h=200&f=webp&q=90" alt="">
+                    <h5>Renmi 10A</h5>
+                    <p>大电量、大音量、大屏幕</p>
+                    <div class="price"><span>649元</span><del style="color: rgb(176, 176, 176);">  699元</del></div>
+                </li>
+                <li class="two">2</li>
+                <li class="three">3</li>
+                <li class="four">4</li>
+                <li class="five">5</li>
+                <li class="six">6</li>
+                <li class="seven">7</li>
+                <li class="eight">8</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

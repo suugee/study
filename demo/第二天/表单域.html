@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://192.168.2.103/api/post" method="post">
+        <!-- text 文本框 用户可以输入任何文字 -->
+        <lable for="user">用户名：</lable><input type="text" name="username" value="请输入用户名" maxlength="6" id="user"> <br>
+        <!-- password 密码框 用户看不见输入的密码 -->
+        <label for="mima">密码：</label><input type="password" name="pwd" id="mima"> <br>
+        <!-- radio 单选按钮 可以实现多选一 -->
+        <!-- name是表单元素的名字 这里的性别按钮必须有相同的名字 才能实现多选一 -->
+        <!-- 单选按钮和复选框可以设置chexked属性 当页面打开的时候就可以默认选中按钮 -->
+        性别：<label for="nan">男</label><input type="radio" name="sex" value="男" checked="checked" id="nan"> <label for="nv">女</label><input type="radio" name="sex" value="男" id="nv"><br>
+        <!-- checkbox 复选框 可以实现多选 -->
+        爱好：<label for="chi">吃饭</label><input type="checkbox" name="hobby" value="吃饭" id="chi"><label for="shui">睡觉</label><input type="checkbox" name="hobby" checked="checked" id="shui"><label for="da">打豆豆</label><input type="checkbox" name="hobby" id="da">        <br>
+        <!-- 点击了提交 就可以把表单域里面的元素 里面的值提交给后台服务器 -->
+        <input type="submit" value="免费注册">
+        <!-- 重置按钮可以还原表单元素的初始默认状态 -->
+        <input type="reset" value="重新填写">
+        <!-- 普通按钮 button 结合JS搭配使用-->
+        <input type="button" value="获取短信验证码"><br>
+        <!-- 文件域  使用场景 上传文件使用 -->
+        上传头像：<input type="file"><br>
+        <br> 籍贯：
+        <select>
+            <option>北京</option>
+            <option>西京</option>
+            <option>东京</option>
+            <option selected="selected">南京</option>
+
+
+        </select>
+        <br>
+        <!--  -->
+        今日反馈：<br>
+        <textarea cols="50" rows="5">今日反馈是用textarea来做的</textarea>
+
+    </form>
+</body>
+
+</html>

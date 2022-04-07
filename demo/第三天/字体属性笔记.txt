@@ -1,0 +1,2 @@
+字体复合属性如何写
+font-style  font-weight font-size  font-family

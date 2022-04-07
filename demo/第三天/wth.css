@@ -1,0 +1,17 @@
+body {
+    font: 16px/28px 'Microsoft YaHei';
+}
+
+h1 {
+    font-weight: normal;
+    text-align: center;
+}
+
+#p1 {
+    text-indent: 2em;
+}
+
+#p2 {
+    font-weight: lighter;
+    font-size: 12px;
+}
